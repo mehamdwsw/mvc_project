@@ -1,4 +1,5 @@
-<?php include './../layout/header.php'; ?>
+<?php include './app/views/layout/header.php';?>
+
 
 <div class="row justify-content-center align-items-center" style="min-height: 60vh;">
     <div class="col-md-5">
@@ -39,7 +40,7 @@
                 </form>
 
                 <div class="text-center mt-4">
-                    <p class="small text-muted">Vous n'avez pas de compte ? <a href="./app/views/auth/" class="text-primary fw-bold text-decoration-none">S'inscrire</a></p>
+                    <p class="small text-muted">Vous n'avez pas de compte ? <a href="?ind=d" class="text-primary fw-bold text-decoration-none">S'inscrire</a></p>
                 </div>
             </div>
         </div>

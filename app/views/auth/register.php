@@ -45,7 +45,7 @@
                 </form>
 
                 <div class="text-center mt-4">
-                    <p class="small text-muted">Déjà inscrit ? <a href="/auth/login" class="text-primary fw-bold text-decoration-none">Se connecter</a></p>
+                    <p class="small text-muted">Déjà inscrit ? <a href="./login.php" class="text-primary fw-bold text-decoration-none">Se connecter</a></p>
                 </div>
             </div>
         </div>

@@ -1,2 +1,2 @@
 <?php
-include_once("./app/views/auth/login.php");
+include_once("./app/views/main.php");
