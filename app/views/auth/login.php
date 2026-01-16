@@ -40,7 +40,7 @@
                 </form>
 
                 <div class="text-center mt-4">
-                    <p class="small text-muted">Vous n'avez pas de compte ? <a href="?ind=d" class="text-primary fw-bold text-decoration-none">S'inscrire</a></p>
+                    <p class="small text-muted">Vous n'avez pas de compte ? <a href="?Register" class="text-primary fw-bold text-decoration-none">S'inscrire</a></p>
                 </div>
             </div>
         </div>

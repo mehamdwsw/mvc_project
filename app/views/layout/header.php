@@ -61,15 +61,15 @@
 <body>
     <div class="bg-shape"></div> <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/">
-                <i class="fas fa-layer-group text-primary"></i> MVC<span class="text-primary">PRO</span>
+            <a class="navbar-brand fw-bold" href="#">
+                <i  class="fas fa-layer-group text-primary"></i> MVC<span class="text-primary">PRO</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="/"><i class="fas fa-home me-1"></i> Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="?Accueil"><i class="fas fa-home me-1"></i> Accueil</a></li>
                     <?php if(isset($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
                         <li class="nav-item"><a class="nav-link text-primary" href="/admin/dashboard"><i class="fas fa-chart-line me-1"></i> Dashboard</a></li>
                     <?php endif; ?>
@@ -85,7 +85,7 @@
                             </ul>
                         </div>
                     <?php else: ?>
-                        <a href="/auth/login" class="btn btn-primary rounded-pill px-4 shadow">Connexion</a>
+                        <a href="?Login" class="btn btn-primary rounded-pill px-4 shadow">Connexion</a>
                     <?php endif; ?>
                 </div>
             </div>
