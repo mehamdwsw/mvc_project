@@ -2,11 +2,10 @@
 
 namespace App\core;
 
-use App\controllers\LoginControllers;
+use App\core\Request;
+use App\controllers\AuthControllers;
 use App\controllers\ErreurControllers;
 use App\controllers\AccueilControllers;
-use App\controllers\RegisterControllers;
-
 
 
 include_once("./vendor/autoload.php");
@@ -29,10 +28,13 @@ class Router
                 AccueilControllers::indix();
                 break;
             case 'Login':
-                LoginControllers::indix();
+                AuthControllers::indix_login();
                 break;
             case 'Register':
-                RegisterControllers::indix();
+                AuthControllers::indix_register();
+                break;
+                case 'Request':
+                Request::Post();
                 break;
             default: {
                     ErreurControllers::indix();

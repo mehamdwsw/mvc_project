@@ -4,19 +4,17 @@ namespace App\models;
 
 class User
 {
-    public int $id;
-    public string $username;
-    public string $email;
-    public string $password;
-    public string $role;
-    public string $created_at;
-    public function __construct($username, $email, $password, ?string $role, ?string $created_at)
+    private int $id;
+    private string $username;
+    private string $email;
+    private string $password;
+    private string $role;
+    private string $created_at;
+    public function __construct($username, $email, $password)
     {
         $this->username = $username;
         $this->email = $email;
         $this->password = $password;
-        $this->role = $role;
-        $this->created_at = $created_at;
     }
 
     public function getCreated_at()
@@ -56,6 +54,16 @@ class User
     public function setEmail($email)
     {
         $this->email = $email;
+
+        return $this;
+    }
+    public function getUsername()
+    {
+        return $this->username;
+    }
+    public function setUsername($username)
+    {
+        $this->username = $username;
 
         return $this;
     }

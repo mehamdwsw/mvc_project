@@ -19,7 +19,7 @@
                     </div>
                 <?php endif; ?>
 
-                <form action="/auth/login" method="POST">
+                <form action="?Request" method="POST">
                     <div class="mb-3">
                         <label class="form-label small fw-bold">Email</label>
                         <div class="input-group">
@@ -34,7 +34,7 @@
                             <input type="password" name="password" class="form-control bg-light border-0" placeholder="••••••••" required>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 shadow-sm">
+                    <button name="submit" value="login" type="submit" class="btn btn-primary w-100 rounded-pill py-2 shadow-sm">
                         Se connecter <i class="fas fa-arrow-right ms-2"></i>
                     </button>
                 </form>

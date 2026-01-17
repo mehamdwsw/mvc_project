@@ -12,7 +12,7 @@
                     <p class="text-muted small">Rejoignez notre communauté en quelques clics</p>
                 </div>
 
-                <form action="/auth/register" method="POST">
+                <form action="?Request" method="POST">
                     <div class="row">
                         <div class="col-md-12 mb-3">
                             <label class="form-label small fw-bold">Nom d'utilisateur</label>
@@ -39,13 +39,13 @@
                         </label>
                     </div>
 
-                    <button type="submit" class="btn btn-primary w-100 rounded-pill py-2 shadow-sm" style="background: linear-gradient(45deg, #4361ee, #7209b7); border: none;">
+                    <button name="submit" value="register" type="submit" class="btn btn-primary w-100 rounded-pill py-2 shadow-sm" style="background: linear-gradient(45deg, #4361ee, #7209b7); border: none;">
                         Créer mon compte
                     </button>
                 </form>
 
                 <div class="text-center mt-4">
-                    <p class="small text-muted">Déjà inscrit ? <a href="./login.php" class="text-primary fw-bold text-decoration-none">Se connecter</a></p>
+                    <p class="small text-muted">Déjà inscrit ? <a href="?Login" class="text-primary fw-bold text-decoration-none">Se connecter</a></p>
                 </div>
             </div>
         </div>
