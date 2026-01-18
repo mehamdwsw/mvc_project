@@ -12,8 +12,7 @@ class AuthControllers{
     include_once("./app/views/auth/register.php");
     }
     public static function login(User $User){
-        // UserRepository::create($User);
-        echo"login";
+        var_dump($User);
     }
     public static function register(User $User){
         return UserRepository::create($User);

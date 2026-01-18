@@ -1,4 +1,6 @@
-<?php include './app/views/layout/header.php'; ?>
+<?php
+session_start();
+include './app/views/layout/header.php'; ?>
 
 <div class="row justify-content-center align-items-center" style="min-height: 70vh;">
     <div class="col-md-6">
@@ -13,6 +15,29 @@
                 </div>
 
                 <form action="?Request" method="POST">
+                    <?php
+                    // var_dump($_SESSION);
+                    if($_SESSION['error']==1){
+                        echo "<div class='alert alert-danger' role='alert'>
+                        Mot de passe not Confirmer
+                        </div>";
+                        $_SESSION['error']=0;
+                    }; if($_SESSION['error']==2){
+                        echo "<div class='alert alert-danger' role='alert'>
+                        email not VALIDATE
+                        </div>";
+                        $_SESSION['error']=0;
+                    };
+                    if($_SESSION['error']==3){
+                        echo "<div class='alert alert-danger' role='alert'>
+                        Adresse e-mail ou nom pris
+                        </div>";
+                        $_SESSION['error']=0;
+                    };
+                    
+
+                    ?>
+
                     <div class="row">
                         <div class="col-md-12 mb-3">
                             <label class="form-label small fw-bold">Nom d'utilisateur</label>
@@ -20,7 +45,7 @@
                         </div>
                         <div class="col-md-12 mb-3">
                             <label class="form-label small fw-bold">Email</label>
-                            <input type="email" name="email" class="form-control bg-light border-0" placeholder="exemple@mail.com" required>
+                            <input type="username" name="email" class="form-control bg-light border-0" placeholder="exemple@mail.com" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="form-label small fw-bold">Mot de passe</label>
@@ -52,4 +77,3 @@
     </div>
 </div>
 <?php include './app/views/layout/footer.php'; ?>
-

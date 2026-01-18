@@ -1,4 +1,6 @@
-    <?php include './app/views/layout/header.php'; ?>
+    <?php
+     include './app/views/layout/header.php';
+     ?>
 
 <div class="row justify-content-center align-items-center text-center" style="min-height: 70vh;">
     <div class="col-md-8 animate__animated animate__zoomIn">

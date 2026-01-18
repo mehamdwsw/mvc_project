@@ -59,4 +59,4 @@
     });
 </script>
 
-<?php include './app/views/layout/footer.php'; ?>
+<?php include './app/views/layout/footer.php'; ?>   
